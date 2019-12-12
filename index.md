@@ -1,6 +1,6 @@
 ## Welcome to the LowMC cryptanalysis challenge!
 
-This website contains information about the LowMC cryptanalysis challenge.
+This website contains information about the LowMC cryptanalysis challenge. *Note that this is not a formal announcement yet, but a preview.*
 
 ### LowMC
 LowMC ([ePrint](https://eprint.iacr.org/2016/687), [Springer](https://link.springer.com/chapter/10.1007/978-3-662-46800-5_17)) is a very parameterizable block cipher design, where the block size, the key size, and various other internals can be chosen freely by the user. The design is a partial substitution-permutation network, meaning that the nonlinear layers in each round do not cover the full state. This construction approach has shown to be beneficial for use cases like MPC, where the number of nonlinear gates has to be kept low.
@@ -21,10 +21,8 @@ We consider following instances of LowMC (n = block size = key size, s = number 
 - n = 256, s = 10
 - n = 255, s = 85 (full nonlinear layer)
 
-### Starting Points
-As a starting point, we have (very briefly) conducted some possible cryptanalytic approaches. *We emphasize that we did not analyze LowMC and these approaches in this specific low-data scenario in detail, and they are only meant to give interested participants some idea from where they can potentially start.*
-
-The round numbers to beat are given in the following table, where n denotes the block size, s the number of S-boxes, and r the number of rounds.
+### The Cryptanalysis Challenge
+The goal of the attacks is to recover the key. The challenge is to use one of our proposed instances and to find an attack covering more rounds than what is suggested by the following table.
 
 | n   | s  | r   |
 |-----|----|-----|
@@ -38,10 +36,7 @@ The round numbers to beat are given in the following table, where n denotes the 
 | 256 | 10 | 28  |
 | 255 | 85 | 4   |
 
-### The Cryptanalysis Challenge
-The goal of the attacks is to recover the key. The challenge is to use one of our proposed instances and to find an attack covering more rounds than what is suggested by the table above.
-
-### Tentative Schedule and Rules
+### Tentative Schedule, Rules, and Prizes
 Schedule:
 - First deadline is March 15 (i.e., the week before FSE 2020)
 - Overall duration is around 2 years; money that is not spent remains in the pot and is part of the following round
@@ -52,9 +47,16 @@ General rules:
 - Verifiability is important
 - Submissions will be published
 
+You can win following prizes for each of the nine challenges:
+- 2k€ for an attack covering more rounds (partial SPN)
+- 2k€ for the fastest attack covering the highest number of rounds vulnerable to current attacks (partial SPN)
+- 5k€ for the first attack covering 4 or more rounds (full SPN)
+- 2k€ for the fastest attack on 3 rounds (full SPN)
+
 ### Reference Implementations
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge.github.io/tree/master/reference).
 
+### Sponsors
 <p align="center">
   <img height="80" src="https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge.github.io/master/media/logo_microsoft.png" />
   <img height="80" src="https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge.github.io/master/media/logo_iov42.png" />

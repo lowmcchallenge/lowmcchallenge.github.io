@@ -23,18 +23,31 @@ Another use case where this design is efficient is a novel post-quantum signatur
 From a cryptanalytic point of view, this scenario is interesting because a potential attacker is only ever able to have access to a single (plaintext, ciphertext) pair. The purpose of this cryptanalysis challenge is therefore to gain a deeper knowledge about the security of LowMC in this setting.
 
 ### Instances
-We consider following instances of LowMC (n = block size = key size, s = number of S-boxes in each round):
+We consider different instances of LowMC, where n denotes the block size (and the key size) and s denotes the number of S-boxes in each round. Specifically, we make a distinction between *partial S-box layers* and *full S-box layers*:
 - n = 128, s = 1
 - n = 128, s = 10
-- n = 129, s = 43 (full nonlinear layer)
+- n = 129, s = 43 (full S-box layer)
 - n = 192, s = 1
 - n = 192, s = 10
-- n = 192, s = 64 (full nonlinear layer)
+- n = 192, s = 64 (full S-box layer)
 - n = 256, s = 1
 - n = 256, s = 10
-- n = 255, s = 85 (full nonlinear layer)
+- n = 255, s = 85 (full S-box layer)
 
 ### The Cryptanalysis Challenge
+The goal of all attacks here is to recover the secret key. We have following challenges and prices in mind for the versions with full S-box layers:
+- Submitters of the *fastest attack* on 2 rounds win EUR 5k.
+- Submitters of the *fastest attack* on 3 rounds win EUR 5k.
+- Submitters of the *fastest attack* on 4 rounds win EUR 5k.
+
+For the versions with partial S-box layers, let again denote by n the block size (and key size) and by s the number of S-boxes. Using this notation, we have following prices in mind for the possible instances from above:
+- Submitters of the *fastest attack* on floor(k/s)*0.8 rounds win EUR 5k.
+- Submitters of the *fastest attack* on floor(k/s)*1.0 rounds win EUR 5k.
+- Submitters of the *fastest attack* on floor(k/s)*1.2 rounds win EUR 5k.
+
+By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security levels are always n bits.
+
+<!--
 The goal of the attacks is to recover the key. The challenge is to use one of our proposed instances and to find an attack covering more rounds than what is suggested by the following table.
 
 | n   | s  | r   |
@@ -48,23 +61,18 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 | 256 | 1  | 280 |
 | 256 | 10 | 28  |
 | 255 | 85 | 4   |
+-->
 
 ### Tentative Schedule, Rules, and Prizes
 Schedule:
-- First deadline is March 15 (i.e., the week before FSE 2020)
-- Overall duration is around 2 years; money that is not spent remains in the pot and is part of the following round
-- The goal is that the total money (100k€) is largely spent at the end
+- The first quick round is until June 1 2020, and winners will be announced after that.
+- The second round is until FSE 2020 (November 2020).
+- Potentially, a third round will be held until June 1 2021.
 
-General rules:
-- Earlier results are better
+Summary of rules:
+- Results with the fastest attacks are better (date of submission does not count)
 - Verifiability is important
 - Submissions will be published
-
-You can win following prizes for each of the nine challenges:
-- 2k€ for an attack covering more rounds (partial SPN)
-- 2k€ for the fastest attack covering the highest number of rounds vulnerable to current attacks (partial SPN)
-- 5k€ for the first attack covering 4 or more rounds (full SPN)
-- 2k€ for the fastest attack on 3 rounds (full SPN)
 
 ### Reference Implementations
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge.github.io/tree/master/reference).

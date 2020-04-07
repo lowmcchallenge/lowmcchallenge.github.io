@@ -79,3 +79,6 @@ Rules:
 
 ### Reference Implementations
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge.github.io/tree/master/reference).
+
+### Contact
+You've solved a challenge or have any other questions? Let us know by writing a mail to [lowmc-challenge@iaik.tugraz.at](mailto:lowmc-challenge@iaik.tugraz.at)

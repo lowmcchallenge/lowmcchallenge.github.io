@@ -2,6 +2,7 @@
 
 This website contains information about the LowMC cryptanalysis challenge. *Note that this is not a formal announcement yet, but a preview.*
 
+<!--
 ### Sponsors
 <p align="center">
   <img height="80" src="https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge.github.io/master/media/logo_microsoft.png" />
@@ -12,6 +13,7 @@ This website contains information about the LowMC cryptanalysis challenge. *Note
 <p align="center">
   <img height="80" src="https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge.github.io/master/media/logo_tugraz.png" />
 </p>
+-->
 
 ### LowMC
 LowMC ([ePrint](https://eprint.iacr.org/2016/687), [Springer](https://link.springer.com/chapter/10.1007/978-3-662-46800-5_17)) is a very parameterizable block cipher design, where the block size, the key size, and various other internals can be chosen freely by the user. The design is a partial substitution-permutation network, meaning that the nonlinear layers in each round do not cover the full state. This construction approach has shown to be beneficial for use cases like MPC, where the number of nonlinear gates has to be kept low.

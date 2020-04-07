@@ -65,7 +65,7 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 | 255 | 85 | 4   |
 -->
 
-### Tentative Schedule, Rules, and Prizes
+### Schedule and Rules
 Schedule:
 - The first quick round is until June 1 2020, and winners will be announced after that.
 - The second round is until FSE 2020 (November 2020).

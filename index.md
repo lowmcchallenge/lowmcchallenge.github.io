@@ -41,9 +41,9 @@ The goal of all attacks here is to recover the secret key. We have following cha
 - Submitters of the *fastest attack* on 4 rounds win EUR 5k.
 
 For the versions with partial S-box layers, let again denote by n the block size (and key size) and by s the number of S-boxes. Using this notation, we have following prices in mind for the possible instances from above:
-- Submitters of the *fastest attack* on floor(k/s)*0.8 rounds win EUR 5k.
-- Submitters of the *fastest attack* on floor(k/s)*1.0 rounds win EUR 5k.
-- Submitters of the *fastest attack* on floor(k/s)*1.2 rounds win EUR 5k.
+- Submitters of the *fastest attack* on floor(n/s)*0.8 rounds win EUR 5k.
+- Submitters of the *fastest attack* on floor(n/s)*1.0 rounds win EUR 5k.
+- Submitters of the *fastest attack* on floor(n/s)*1.2 rounds win EUR 5k.
 
 By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security levels are always n bits.
 

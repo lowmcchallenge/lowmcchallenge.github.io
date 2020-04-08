@@ -1,5 +1,3 @@
-## Welcome to the LowMC cryptanalysis challenge!
-
 This website contains information about the LowMC cryptanalysis challenge. *Note that this is not a formal announcement yet, but a preview.*
 
 <!--

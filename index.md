@@ -43,6 +43,8 @@ For the versions with partial S-box layers, let again denote by n the block size
 - Submitters of the *fastest attack* on floor(n/s)*1.0 rounds win EUR 3k.
 - Submitters of the *fastest attack* on floor(n/s)*1.2 rounds win EUR 4k.
 
+Sponsoring: Currently USD 50k by Microsoft
+
 In total, EUR 22k may be earned in the first round. By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security levels are always n bits.
 
 In addition, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique (we will consider weak-key attacks, but not related-key attacks). The winner of this side challenge gets EUR 4k.
@@ -64,18 +66,18 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 -->
 
 ### Schedule and Rules
-Schedule:
-- The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that.
-- Tentative: The second round is planned to run until FSE 2020 (November 2020)
+Tentative schedule:
+- The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that
+- The second round is planned to run until the end of 2020
 - Potentially, a third round will be held until June 1 2021.
-- Overall duration is around 2 years (money not spent remains in the pot and is part of the following round)
+- Overall duration is around 2 years (money not spent remains in the pot and is part of the following rounds)
 
 Rules:
 - Results with the fastest attacks are better (date of submission does not count)
+- If two attacks are equally efficient or very similar, the one submitted earlier wins
 - Verifiability is important
 - Submissions will be published
 - Brute force-like with minor gains will not be considered
-- If two attacks are equally efficient, the one submitted earlier wins
 
 ### Further Material
 The baseline document with some attack approaches can be found [here](https://github.com/lowmcchallenge/lowmcchallenge-material/blob/master/docs/survey.pdf).

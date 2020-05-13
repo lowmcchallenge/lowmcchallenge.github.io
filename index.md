@@ -1,4 +1,4 @@
-This website contains information about the LowMC cryptanalysis challenge. *Note that this is not a formal announcement yet, but a preview.*
+This website contains information about the LowMC cryptanalysis challenge.
 
 <!--
 ### Sponsors

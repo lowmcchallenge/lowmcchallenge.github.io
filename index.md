@@ -73,7 +73,7 @@ Rules:
 - Results with the fastest attacks are better (date of submission does not count)
 - Verifiability is important
 - Submissions will be published
-- Brute-force-like attacks with minor gains will not be considered
+- Brute force-like with minor gains will not be considered
 
 ### Reference Implementations
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge.github.io/tree/master/reference).

@@ -77,8 +77,10 @@ Rules:
 - Brute force-like with minor gains will not be considered
 - If two attacks are equally efficient, the one submitted earlier wins
 
-### Reference Implementations
+### Further Material
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge.github.io/tree/master/reference).
+
+The baseline document with some attack approaches can be found [here](https://github.com/lowmcchallenge/lowmcchallenge-material/blob/master/docs/survey.pdf). Our implementation of the decoding attack on LowMC is available on the repository [here](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/decoding-attack).
 
 ### Contact
 You've solved a challenge or have any other questions? Let us know by writing a mail to [lowmc-challenge@iaik.tugraz.at](mailto:lowmc-challenge@iaik.tugraz.at)

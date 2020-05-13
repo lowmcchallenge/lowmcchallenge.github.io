@@ -80,7 +80,7 @@ Rules:
 - If two attacks are equally efficient or very similar, the one submitted earlier wins
 - Verifiability is important
 - Submissions will be published
-- Brute force-like with minor gains will not be considered
+- Brute force-like approaches with minor gains will not be considered
 
 ### Further Material
 The baseline document with some attack approaches can be found [here](https://github.com/lowmcchallenge/lowmcchallenge-material/blob/master/docs/survey.pdf).

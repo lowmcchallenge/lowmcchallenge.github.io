@@ -65,7 +65,7 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 
 ### Schedule and Rules
 Schedule:
-- The first quick round is until June 1 2020, and winners will be announced after that.
+- The first quick round is until August 20 2020, and winners will be announced after that.
 - The second round is until FSE 2020 (November 2020).
 - Potentially, a third round will be held until June 1 2021.
 

@@ -33,6 +33,9 @@ We consider different instances of LowMC, where n denotes the block size (and th
 - n = 255, s = 85 (full S-box layer)
 
 ### The Cryptanalysis Challenge
+
+**Sponsoring: Currently USD 50k by Microsoft**
+
 The goal of all attacks here is to recover the secret key. We have following challenges and prices in mind for the versions with full S-box layers:
 - Submitters of the *fastest attack* on 2 rounds win EUR 2k.
 - Submitters of the *fastest attack* on 3 rounds win EUR 3k.
@@ -42,8 +45,6 @@ For the versions with partial S-box layers, let again denote by n the block size
 - Submitters of the *fastest attack* on floor(n/s)*0.8 rounds win EUR 2k.
 - Submitters of the *fastest attack* on floor(n/s)*1.0 rounds win EUR 3k.
 - Submitters of the *fastest attack* on floor(n/s)*1.2 rounds win EUR 4k.
-
-**Sponsoring: Currently USD 50k by Microsoft**
 
 In total, EUR 22k may be earned in the first round. By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security levels are always n bits.
 

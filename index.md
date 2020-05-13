@@ -48,7 +48,7 @@ For the versions with partial S-box layers, let again denote by n the block size
 
 By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security level is always n bits.
 
-In addition, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique (we will consider weak-key attacks, but not related-key attacks). The winner of this side challenge gets EUR 4k.
+Additionally, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique (we will consider weak-key attacks, but not related-key attacks). The winner of this side challenge gets EUR 4k.
 
 In total, EUR 22k may be earned in the first round.
 

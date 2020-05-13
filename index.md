@@ -45,7 +45,7 @@ For the versions with partial S-box layers, let again denote by n the block size
 
 By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security levels are always n bits.
 
-In addition, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique. The winner of this side challenge gets EUR 5k.
+In addition, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique (we will consider weak-key attacks, but not related-key attacks). The winner of this side challenge gets EUR 5k.
 
 <!--
 The goal of the attacks is to recover the key. The challenge is to use one of our proposed instances and to find an attack covering more rounds than what is suggested by the following table.
@@ -65,8 +65,8 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 
 ### Schedule and Rules
 Schedule:
-- The first quick round is until August 20 2020, and winners will be announced after that.
-- The second round is until FSE 2020 (November 2020).
+- The first quick round is until August 10 2020, and winners will be announced after that.
+- Tentative: The second round is planned to run until FSE 2020 (November 2020)
 - Potentially, a third round will be held until June 1 2021.
 
 Rules:
@@ -74,6 +74,7 @@ Rules:
 - Verifiability is important
 - Submissions will be published
 - Brute force-like with minor gains will not be considered
+- If two attacks are equally efficient, the one submitted earlier wins
 
 ### Reference Implementations
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge.github.io/tree/master/reference).

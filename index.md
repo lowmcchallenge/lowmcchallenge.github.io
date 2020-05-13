@@ -46,9 +46,11 @@ For the versions with partial S-box layers, let again denote by n the block size
 - Submitters of the *fastest attack* on floor(n/s)*1.0 rounds win EUR 3k.
 - Submitters of the *fastest attack* on floor(n/s)*1.2 rounds win EUR 4k.
 
+By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security level is always n bits.
+
 In addition, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique (we will consider weak-key attacks, but not related-key attacks). The winner of this side challenge gets EUR 4k.
 
-In total, EUR 22k may be earned in the first round. By the *fastest attack* we mean the biggest gain in efficiency over exhaustive search. Note that we always use a data complexity of 1 for these attacks, which means that no more than a single (plaintext, ciphertext) pair is allowed. The claimed security level is always n bits.
+In total, EUR 22k may be earned in the first round.
 
 <!--
 The goal of the attacks is to recover the key. The challenge is to use one of our proposed instances and to find an attack covering more rounds than what is suggested by the following table.

@@ -83,4 +83,4 @@ The baseline document with some attack approaches can be found [here](https://gi
 You can find reference implementations of above-mentioned instances and all needed values (e.g., matrices, constants) in [this folder](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/reference). Our implementation of the decoding attack on LowMC is available [here](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/decoding-attack).
 
 ### Contact
-You've solved a challenge or have any other questions? Let us know by writing a mail to [lowmc-challenge@iaik.tugraz.at](mailto:lowmc-challenge@iaik.tugraz.at)
+You've solved a challenge or have any other questions? Let us know by writing an email to [lowmc-challenge@iaik.tugraz.at](mailto:lowmc-challenge@iaik.tugraz.at)!

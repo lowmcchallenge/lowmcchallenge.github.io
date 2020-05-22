@@ -87,5 +87,11 @@ The baseline document with some attack approaches can be found [here](https://gi
 
 You can find reference implementations of LowMC and scripts to generate all needed values (e.g., matrices, constants) in the [original LowMC repository](https://github.com/LowMC/lowmc). Our implementation of the decoding attack on LowMC is available [here](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/decoding-attack).
 
+### News and Updates
+**15 May 2020**
+Corrected some mistakes in the reference implementations regarding the plaintext output and a missing matrix multiplication. Thanks to Vukasin Karadzic for pointing this out.
+**13 May 2020**
+Challenge started!
+
 ### Contact
 You've solved a challenge or have any other questions? Let us know by writing an email to [lowmc-challenge@iaik.tugraz.at](mailto:lowmc-challenge@iaik.tugraz.at)!

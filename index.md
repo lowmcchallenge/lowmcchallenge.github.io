@@ -89,8 +89,11 @@ You can find reference implementations of LowMC and scripts to generate all need
 
 ### News and Updates
 **15 May 2020**
+
 Corrected some mistakes in the reference implementations regarding the plaintext output and a missing matrix multiplication. Thanks to Vukasin Karadzic for pointing this out.
+
 **13 May 2020**
+
 Challenge started!
 
 ### Contact

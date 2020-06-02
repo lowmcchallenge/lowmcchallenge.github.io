@@ -89,6 +89,7 @@ You can find reference implementations of LowMC and scripts to generate all need
 
 ### News and Updates
 **2 June 2020**
+
 [iov42](https://iov42.com/) has joined our sponsors with EUR 50k!
 
 **15 May 2020**

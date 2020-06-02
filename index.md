@@ -34,7 +34,7 @@ We consider different instances of LowMC, where n denotes the block size (and th
 
 ### The Cryptanalysis Challenge
 
-**Sponsoring: Currently USD 50k by Microsoft**
+**Sponsoring: Currently USD 50k from Microsoft and EUR 50k from iov42**
 
 The goal of all attacks here is to recover the secret key. We have following challenges and prices in mind for the versions with full S-box layers:
 - Submitters of the *fastest attack* on 2 rounds win EUR 2k.
@@ -88,9 +88,12 @@ The baseline document with some attack approaches can be found [here](https://gi
 You can find reference implementations of LowMC and scripts to generate all needed values (e.g., matrices, constants) in the [original LowMC repository](https://github.com/LowMC/lowmc). Our implementation of the decoding attack on LowMC is available [here](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/decoding-attack).
 
 ### News and Updates
+**2 June 2020**
+[iov42](https://iov42.com/) has joined our sponsors with EUR 50k!
+
 **15 May 2020**
 
-Corrected some mistakes in the reference implementations regarding the plaintext output and a missing matrix multiplication. Thanks to Vukasin Karadzic for pointing this out.
+Corrected some mistakes in the reference implementations regarding the plaintext output and a missing matrix multiplication. Thanks to Vukasin Karadzic (TU Darmstadt) for pointing this out.
 
 **13 May 2020**
 

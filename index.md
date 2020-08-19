@@ -93,7 +93,7 @@ The first result is a 2-round attack and an attack on floor(n/s)*0.8 rounds, bot
 ### News and Updates
 **18 August 2020**
 
-The second round is announced. More details about this can be found in our [Crypto 2020 rump session slides](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/LowMC_crypto_rump2020_v02.pdf)
+The second round is announced. More details about this can be found in our [Crypto 2020 rump session slides](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/LowMC_crypto_rump2020_v02.pdf).
 
 **17 August 2020**
 

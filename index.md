@@ -70,8 +70,8 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 
 ### Schedule and Rules
 Tentative schedule:
-- The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that
-- The second round is planned to run until the end of 2020
+- ~~The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that~~
+- The second round is until December 1 (one week before Asiacrypt 2020)
 - Potentially, a third round will be held until June 1 2021.
 - Overall duration is around 2 years (money not spent remains in the pot and is part of the following rounds)
 
@@ -83,11 +83,22 @@ Rules:
 - Brute force-like approaches with minor gains will not be considered
 
 ### Further Material
-The baseline document with some attack approaches can be found [here](https://github.com/lowmcchallenge/lowmcchallenge-material/blob/master/docs/survey.pdf).
+The baseline document with some attack approaches can be found [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/survey.pdf).
 
 You can find reference implementations of LowMC and scripts to generate all needed values (e.g., matrices, constants) in the [original LowMC repository](https://github.com/LowMC/lowmc). Our implementation of the decoding attack on LowMC is available [here](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/decoding-attack).
 
+### Current Results
+The first result is a 2-round attack and an attack on floor(n/s)*0.8 rounds, both with lowest complexities. The attack was found by Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), F. Betül Durak (Bosch Research), and Serge Vaudenay (EPFL), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
+
 ### News and Updates
+**18 August 2020**
+
+The second round is announced. More details about this can be found in our [Crypto 2020 rump session slides](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/LowMC_crypto_rump2020_v02.pdf)
+
+**17 August 2020**
+
+Congratulations to the first winners, who are Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), F. Betül Durak (Bosch Research), and Serge Vaudenay (EPFL)! [In their paper](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf), they describe a 2-round attack and an attack on floor(n/s)*0.8 rounds, both with lowest complexities. The price they claim is EUR 4k.
+
 **2 June 2020**
 
 [iov42](https://iov42.com/) has joined our sponsors with EUR 50k!

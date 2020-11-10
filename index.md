@@ -50,7 +50,7 @@ By the *fastest attack* we mean the biggest gain in efficiency over exhaustive s
 
 Additionally, we also offer a bonus prize for finding an interesting property of LowMC or for showing a new technique (we will consider weak-key attacks, but not related-key attacks). The winner of this side challenge gets EUR 4k.
 
-In total, EUR 22k may be earned in the first round.
+In total, EUR 22k may be earned in this current round.
 
 <!--
 The goal of the attacks is to recover the key. The challenge is to use one of our proposed instances and to find an attack covering more rounds than what is suggested by the following table.

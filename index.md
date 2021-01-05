@@ -91,7 +91,7 @@ You can find reference implementations of LowMC and scripts to generate all need
 The first result is a 2-round attack and an attack on floor(n/s)*0.8 rounds, both with lowest complexities. The attack was found by Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), F. Betül Durak (Bosch Research), and Serge Vaudenay (EPFL), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
 
 ### News and Updates
-**05 January 2021**
+**5 January 2021**
 
 Congratulations to the second winners, who are Subhadeep Banik (EPFL) and Serge Vaudenay (EPFL)! [In their paper](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_2.pdf), they describe new and faster attacks on 2 rounds (full S-box layers) and floor(n/s)*0.8 rounds (partial S-box layers).
 

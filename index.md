@@ -71,7 +71,7 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 ### Schedule and Rules
 Tentative schedule:
 - ~~The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that~~
-- The second round is until December 1 (one week before Asiacrypt 2020)
+- ~~The second round is until December 1 (one week before Asiacrypt 2020)~~
 - Potentially, a third round will be held until June 1 2021.
 - Overall duration is around 2 years (money not spent remains in the pot and is part of the following rounds)
 
@@ -91,6 +91,10 @@ You can find reference implementations of LowMC and scripts to generate all need
 The first result is a 2-round attack and an attack on floor(n/s)*0.8 rounds, both with lowest complexities. The attack was found by Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), F. Betül Durak (Bosch Research), and Serge Vaudenay (EPFL), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
 
 ### News and Updates
+**05 January 2021**
+
+Congratulations to the second winners, who are Subhadeep Banik (EPFL) and Serge Vaudenay (EPFL)! [In their paper](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_2.pdf), they describe new and faster attacks on 2 rounds (full S-box layers) and floor(n/s)*0.8 rounds (partial S-box layers).
+
 **18 August 2020**
 
 The second round is announced. More details about this can be found in our [Crypto 2020 rump session slides](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/LowMC_crypto_rump2020_v02.pdf).

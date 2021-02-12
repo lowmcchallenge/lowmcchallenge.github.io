@@ -72,7 +72,7 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 Tentative schedule:
 - ~~The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that~~
 - ~~The second round is until December 1 (one week before Asiacrypt 2020)~~
-- A third round will be held until June 1 2021.
+- A third round is now running until April 27 2021
 - Overall duration is around 2 years (money not spent remains in the pot and is part of the following rounds)
 
 Rules:

@@ -72,7 +72,7 @@ The goal of the attacks is to recover the key. The challenge is to use one of ou
 Tentative schedule:
 - ~~The first quick round is until August 10 2020 (one week before Crypto 2020), and winners will be announced after that~~
 - ~~The second round is until December 1 (one week before Asiacrypt 2020)~~
-- A third round is now running until April 27 2021
+- ~~A third round is now running until April 27 2021~~
 - Overall duration is around 2 years (money not spent remains in the pot and is part of the following rounds)
 
 Rules:
@@ -83,14 +83,105 @@ Rules:
 - Brute force-like approaches with minor gains will not be considered
 
 ### Further Material
-The baseline document with some attack approaches can be found [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/survey.pdf).
+The current status with some of our baseline approaches and new attacks found during this competition can be downloaded [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/survey.pdf).
 
 You can find reference implementations of LowMC and scripts to generate all needed values (e.g., matrices, constants) in the [original LowMC repository](https://github.com/LowMC/lowmc). Our implementation of the decoding attack on LowMC is available [here](https://github.com/lowmcchallenge/lowmcchallenge-material/tree/master/code/decoding-attack).
 
-### Current Results
-The first result is a 2-round attack and an attack on floor(n/s)*0.8 rounds, both with lowest complexities. The attack was found by Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), F. Betül Durak (Bosch Research), and Serge Vaudenay (EPFL), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
+### Results after Third Round
+We thank all the submitters in the first three rounds of this challenge for new insights regarding low-data attacks against LowMC! Specifically, the attacks found during the first three rounds of the challenge where the following:
+- An attack that combines lineariziation with guess-and-determine and meet-in-the-middle technique. The attack was found by Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), Serge Vaudenay (EPFL), and Hailun Yan (EPFL), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
+Published at Asiacrypt 2021 and subsequently referred to as "Linearization + G&D + MITM"
+<!--
+- A simple attack that combines lineariziation with guess-and-determine  techniques. The attack was found by Fukang Liu (East China Normal University, University of Hyogo), Takanori Isobe (National Institute of Information and Communications Technology, Tokyo and University of Hyogo), and Willi Meier (FHNW), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
+Subsequently referred to as "Linearization + G&D".
+-->
+- A new polynomial method for solving multivariate equation systems over GF(2) found by Itai Dinur (Ben-Gurion University) which is described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
+Published at Eurocrypt 2021 and subsequently referred to as "Polynomial Method".
+
+The tables below show a comparison of these attacks in terms of time complexities in bit operations (T) and memory complexities in bits (M), if available. In the following, $n$ denotes the state size, $r$ the number of rounds and $s$ the number of S-Boxes in rounds with partial S-Box layer. The data complexity is 1 in all cases.
+
+**Full S-Box Layer**
+
+<!--
+| (129,2) | Linearization + G&D | $101.2$ | $16.5$ | [1] |
+| (192,2) | Linearization + G&D | $142.9$ | $17.7$ | [1] |
+| (255,2) | Linearization + G&D | $184.8$ | $18.3$ | [1] |
+| (129,3) | Linearization + G&D | $143.9$ | $17.7$ | [1] |
+| (192,3) | Linearization + G&D | $206.3$ | $18.8$ | [1] |
+| (255,3) | Linearization + G&D | $268.7$ | $19.6$ | [1] |
+-->
+
+| (n,r) | Method | log_2(T) | log_2(M) | Winner |
+|---|---|---|---|---|
+| (129,2) | Linearization + G&D + MITM | $101.4$ | $na$ | <span> &#9733;</span> | [2] |
+| (192,2) | Linearization + G&D + MITM | $142.6$ | $na$ |<span> &#9733;</span> | [2] |
+| (255,2) | Linearization + G&D + MITM | $184.2$ | $na$ | <span> &#9733;</span> | [2] |
+| (129,3) | Linearization + G&D + MITM | $144.4$ | $na$ | | [2] |
+| (192,3) | Linearization + G&D + MITM | $206.6$ | $na$ | | [2] |
+| (255,3) | Linearization + G&D + MITM | $269.2$ | $na$ | | [2] |
+| (129,2) | Polynomial Method | $118$ | $>65$ | | [3] |
+| (192,2) | Polynomial Method | $170$ | $>95$ | | [3] |
+| (255,2) | Polynomial Method | $222$ | $>120$ | | [3] |
+| (129,3) | Polynomial Method | $125$ | $>65$ | <span> &#9733;</span> | [3] |
+| (192,3) | Polynomial Method | $180$ | $>95$ | <span> &#9733;</span> | [3] |
+| (255,3) | Polynomial Method | $235$ | $>120$ | <span> &#9733;</span> | [3] |
+| (129,4) | Polynomial Method | $130$ | $>65$ | <span> &#9733;</span> | [3] |
+| (192,4) | Polynomial Method | $188$ | $>95$ | <span> &#9733;</span> | [3] |
+| (255,4) | Polynomial Method | $245$ | $>120$ | <span> &#9733;</span> | [3] |
+
+
+**Partial S-Box Layer with 0.8*n/s Rounds**
+
+<!--
+| (128,1,102) | Linearization + G&D | $118$   | $17.1$ | [1] |
+| (192,1,153) | Linearization + G&D | $168.6$ | $17.7$ | [1] |
+| (256,1,204) | Linearization + G&D | $219.3$ | $18.8$ | [1] |
+| (128,10,9)  | Linearization + G&D | $115$   | $16.5$ | [1] |
+| (192,10,15) | Linearization + G&D | $164.6$ | $18.3$ | [1] |
+| (256,10,20) | Linearization + G&D | $214.3$ | $18.8$ | [1] |
+-->
+
+| (n,s,r) | Method | log_2(T) | log_2(M) | Winner |
+|---|---|---|---|---|
+| (128,1,102) | Linearization + G&D + MITM | $121.7$ | $na$ | <span> &#9733;</span> | [2] |
+| (192,1,153) | Linearization + G&D + MITM | $174.4$ | $na$ | <span> &#9733;</span> | [2] |
+| (256,1,204) | Linearization + G&D + MITM | $226.7$ | $na$ | <span> &#9733;</span> | [2] |
+| (128,10,9)  | Linearization + G&D + MITM | $117.2$ | $na$ | <span> &#9733;</span> | [2] |
+| (192,10,15) | Linearization + G&D + MITM | $178.1$ | $na$ | <span> &#9733;</span> | [2] |
+| (256,10,20) | Linearization + G&D + MITM | $219.4$ | $na$ | <span> &#9733;</span> | [2] |
+
+**Partial S-Box Layer with n/s Rounds**
+
+<!--
+| (128,1,128) | Linearization + G&D | $121.9$ | $17.7$ | [1] |
+| (192,1,192) | Linearization + G&D | $183.5$ | $18.8$ | [1] |
+| (256,1,256) | Linearization + G&D | $245.5$ | $19.6$ | [1] |
+| (128,10,12) | Linearization + G&D | $117.3$ | $17.7$ | [1] |
+| (192,10,19) | Linearization + G&D | $184.9$ | $18.8$ | [1] |
+| (256,10,25) | Linearization + G&D | $242.9$ | $19.6$ | [1] |
+-->
+
+| (n,s,r) | Method | log_2(T) | log_2(M) | Winner |
+|---|---|---|---|--|
+| (128,1,128) | Linearization + G&D + MITM | $147$   | $na$ | <span> &#9733;</span> | [2] |
+| (192,1,192) | Linearization + G&D + MITM | $212.8$ | $na$ | <span> &#9733;</span> | [2] |
+| (256,1,256) | Linearization + G&D + MITM | $278$   | $na$ | <span> &#9733;</span> | [2] |
+| (128,10,12) | Linearization + G&D + MITM | $136.6$ | $na$ | <span> &#9733;</span> | [2] |
+| (192,10,19) | Linearization + G&D + MITM | $208.4$ | $na$ | <span> &#9733;</span> | [2] |
+| (256,10,25) | Linearization + G&D + MITM | $268.6$ | $na$ | <span> &#9733;</span> | [2] |
+
+
+<!-- **Sources**
+[1] https://eprint.iacr.org/2021/255
+[2] Private Communication
+[3] https://eprint.iacr.org/2021/578
+-->
+
 
 ### News and Updates
+**19 October 2021**
+Updated the results after the third round including the current attack approaches.
+
 **5 January 2021**
 
 Congratulations to the second winners, who are Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), and Serge Vaudenay (EPFL)! [In their paper](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_2.pdf), they describe new and faster attacks on 2 rounds (full S-box layers) and floor(n/s)*0.8 rounds (partial S-box layers).

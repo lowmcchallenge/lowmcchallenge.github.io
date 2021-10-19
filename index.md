@@ -180,6 +180,7 @@ The tables below show a comparison of these attacks in terms of time complexitie
 
 ### News and Updates
 **19 October 2021**
+
 Updated the results after the third round including the current attack approaches.
 
 **5 January 2021**

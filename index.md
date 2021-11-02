@@ -91,10 +91,6 @@ You can find reference implementations of LowMC and scripts to generate all need
 We thank all the submitters in the first three rounds of this challenge for new insights regarding low-data attacks against LowMC! Specifically, the attacks found during the first three rounds of the challenge where the following:
 - An attack that combines lineariziation with guess-and-determine and meet-in-the-middle technique. The attack was found by Subhadeep Banik (EPFL), Khashayar Barooti (EPFL), Serge Vaudenay (EPFL), and Hailun Yan (EPFL), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
 Published at Asiacrypt 2021 and subsequently referred to as "Linearization + G&D + MITM"
-<!--
-- A simple attack that combines lineariziation with guess-and-determine  techniques. The attack was found by Fukang Liu (East China Normal University, University of Hyogo), Takanori Isobe (National Institute of Information and Communications Technology, Tokyo and University of Hyogo), and Willi Meier (FHNW), and is further described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
-Subsequently referred to as "Linearization + G&D".
--->
 - A new polynomial method for solving multivariate equation systems over GF(2) found by Itai Dinur (Ben-Gurion University) which is described [here](https://raw.githubusercontent.com/lowmcchallenge/lowmcchallenge-material/master/docs/lowmc_analysis_1.pdf).
 Published at Eurocrypt 2021 and subsequently referred to as "Polynomial Method".
 
